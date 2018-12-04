@@ -1,1 +1,1 @@
-web: node admin/bin/www
+web: npm start
