@@ -10,13 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     
   });
 
-  Model.associate = (models) => {
-    // Model.belongsToMany(models.question, {
-    //   through: 'questiontoken',
-    //   foreignKey: 'tokenId',
-    // });
-    Model.hasOne(models.question_tokens, { foreignKey: 'token_id'});
-  };
+  Model.associate = (models) => {};
 
   return Model;
 };

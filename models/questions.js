@@ -15,7 +15,6 @@ module.exports = (sequelize, DataTypes) => {
 
   Model.associate = (models) => {
     Model.belongsTo(models.games, { foreignKey: 'game_id'});
-    // Model.hasOne(models.question_tokens, { foreignKey: 'question_id'});
   };
 
   return Model;
